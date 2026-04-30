@@ -1,0 +1,50 @@
+}
+
+.roulette-container {
+    position: relative;
+    text-align: center;
+}
+
+/* 상단 화살표 */
+.arrow {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #ff4757;
+    z-index: 10;
+}
+
+canvas {
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+#spinBtn {
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #2f3542;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: block;
+    width: 100%;
+}
+
+#spinBtn:hover {
+    background-color: #57606f;
+    transform: scale(1.05);
+}
+
+#spinBtn:active {
+    transform: scale(0.95);
+}
